@@ -1,0 +1,160 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.counterApp {
+  width: 420px;
+  padding: 20px 10px;
+  padding-bottom: 40px;
+  /* border: 1px solid #8a8a8a; */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+/* .counterApp:hover{
+  box-shadow: rgba(246, 0, 98, 0.25) 0px 54px 55px, rgba(246, 0, 98, 0.12) 0px -12px 30px, rgba(246, 0, 98, 0.12) 0px 4px 6px, rgba(246, 0, 98, 0.17) 0px 12px 13px, rgba(246, 0, 98, 0.09) 0px -3px 5px;
+} */
+
+.counterApp h1 {
+  font-size: 30px;
+  color: dodgerblue;
+}
+
+.counterApp label {
+  color: #8a8a8a;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.counterApp select {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  color: #8a8a8a;
+  outline: none;
+  cursor: pointer;
+}
+
+.counterApp h2 {
+  font-size: 30px;
+  color: dodgerblue;
+}
+
+.counterApp .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.counterApp .buttons button {
+  padding: 10px 50px;
+}
+
+.counterApp .buttons .increment {
+  border: 1px solid transparent;
+  outline: none;
+  color: #fff;
+  background: #3498db;
+  transition: 0.3s ease all;
+}
+
+.counterApp .buttons .increment:active {
+  background: #2980b9;
+  color: #8a8a8a;
+}
+
+.counterApp .buttons .increment:hover {
+  box-shadow: rgb(30, 144, 255) 0px 20px 30px -10px;
+}
+
+.counterApp .buttons .reset {
+  border: 1px solid transparent;
+  outline: none;
+  color: #fff;
+  background: #e74c3c;
+  transition: 0.3s ease all;
+}
+
+.counterApp .buttons .reset:active {
+  background: #e74c3c;
+  color: #8a8a8a;
+}
+
+.counterApp .buttons .reset:hover {
+  box-shadow: rgb(231, 76, 60) 0px 20px 30px -10px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@media screen and (max-width: 480px) {
+  #root {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .counterApp {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #8a8a8a;
+    background: #fff;
+    border-radius: 10px;
+  }
+
+  .counterApp h2 {
+    font-size: 22px;
+  }
+
+  .counterApp .buttons button {
+    padding: 6px 35px;
+  }
+
+  .counterApp select {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .counterApp select option {
+    font-size: 14px;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
